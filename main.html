@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 30px); /* Adjusted height to accommodate the black strip */
+    overflow: hidden;
+    position: relative; /* Added position relative */
+    background-color: #ffffff; /* Set background color to white */
+    display: flex;
+    justify-content: center; /* Center the iframe horizontally */
+    align-items: center; /* Center the iframe vertically */
+  }
+  #black-strip {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  #signature {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  #iframe-container {
+    padding-left: 2cm;
+    padding-right: 2cm;
+    width: calc(100% - 4cm); /* Adjusted width to maintain white space */
+  }
+  iframe {
+    width: 100%; /* Make the iframe fill its container */
+    height: calc(100% - 30px); /* Adjusted height to accommodate the black strip */
+    min-height: calc(100vh - 30px);
+  }
+</style>
+</head>
+<body>
+<div id="iframe-container">
+<iframe src="https://www.chatbase.co/chatbot-iframe/jIuWIckHW3UlH82OrROQP" title="Chatbot" frameborder="0"></iframe>
+</div>
+<div id="black-strip"></div>
+<div id="signature">Myself_IMMORTAL</div>
+</body>
+</html>
